@@ -14,8 +14,7 @@ friend_name = 'Artiom'
 my_name = 'Catalin'
 website = "https://dvmn.org/profession-ref-program/casiancik.c/4kFZ3/"
 
-letter = """
-From: {3}
+letter = """From: {3}
 To: {4}
 Subject: Приглашение!
 Content-Type: text/plain; charset="UTF-8"
