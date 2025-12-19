@@ -28,7 +28,7 @@ img_green = Image.open("new_green.jpg")
 new_image = Image.merge("RGB", (img_red, img_blue, img_green))
 new_image.save("new_test.jpg")
 
-# new_test = Image.open("new_test.jpg")
-# new_test.thumbnail((100, 100))
-# new_test.save("test_ava.jpg")
+new_test = Image.open("new_test.jpg")
+new_test.thumbnail((100, 100))
+new_test.save("test_ava.jpg")
 
