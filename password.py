@@ -1,24 +1,23 @@
-PASSWORD = input('Введите пароль: ')
 
 
-def check_password(PASSWORD):
+def check_password(password):
 	score = 0
-	symbols = "!@#$%^&*()-_=+"
-	if any(i.isdigit() for i in PASSWORD):
+	if any(i.isdigit() for i in password):
 		score += 2
-	if any(i.isalpha() for i in PASSWORD):
+	if any(i.isalpha() for i in password):
 		score += 2
-	if any(i.isupper() for i in PASSWORD):
+	if any(i.isupper() for i in password):
 		score += 2
-	if any(i.islower() for i in PASSWORD):
+	if any(i.islower() for i in password):
 		score += 2
-	if any(i in symbols for i in PASSWORD):
+	if any(not i.isalnum() for i in password):
 		score += 2
 	return score
 
 
 def main():
-	check_password(PASSWORD)
+	password = input('Введите пароль: ')
+	check_password(password)
 
 
 if __name__ == '__main__':
