@@ -17,7 +17,6 @@ def check_password(password):
 
 def main():
 	password = input('Введите пароль: ')
-	check_password(password)
 	print(check_password(password))
 
 
