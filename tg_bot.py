@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-token = os.getenv('BOT_TOKEN')
-bot = ptbot.Bot(token)
+TG_TOKEN = os.getenv('BOT_TOKEN')
+bot = ptbot.Bot(TG_TOKEN)
 
 
 def render_progressbar(total, iteration, prefix='', suffix='', length=30, fill='█', zfill='░'):
@@ -40,4 +40,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
